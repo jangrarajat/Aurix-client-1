@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ServicesMegaMenu from './navbarOptions/ServicesMegaMenu';
 import WhoWeAreMegaMenu from './navbarOptions/WhoWeAreMegaMenu';
 import CareersMegaMenu from './navbarOptions/CareersMegaMenu';
-
+import { Link } from 'react-router-dom';
 function Navbar() {
   const [activeTab, setActiveTab] = useState(null);
 
@@ -21,11 +21,13 @@ function Navbar() {
       {/* Navbar Main */}
       <nav className='w-full fixed top-0 left-0 bg-black p-4 px-10 text-gray-300 flex items-center justify-between z-50 border-b border-gray-900'>
         <div className='flex items-center gap-5'>
-          <img
-            src="https://res.cloudinary.com/djtvxmttf/image/upload/v1777626035/lojj_rz6wgh.png"
-            alt="logo"
-            className='h-20'
-          />
+          <Link to='/'>
+            <img
+              src="https://res.cloudinary.com/djtvxmttf/image/upload/v1777626035/lojj_rz6wgh.png"
+              alt="logo"
+              className='h-20'
+            />
+          </Link>
 
           <div className='flex items-center gap-8'>
             {navLinks.map((link) => (
@@ -48,10 +50,12 @@ function Navbar() {
             ))}
           </div>
         </div>
+        <Link to='/contact'>
 
-        <div className='cursor-pointer font-medium text-3xl hover:underline hover:text-white transition-colors'>
-          Contact US
-        </div>
+          <div className='cursor-pointer font-medium text-3xl hover:underline  hover:text-white transition-colors'>
+            Contact US
+          </div>
+        </Link>
       </nav>
 
       {/* --- Mega Dropdown Container --- */}
@@ -65,7 +69,7 @@ function Navbar() {
           {activeTab === 'what' && <ServicesMegaMenu />}
           {activeTab === 'who' && <WhoWeAreMegaMenu />}
           {activeTab === 'careers' && <CareersMegaMenu />}
-      
+
         </div>
       </div>
 
@@ -75,6 +79,8 @@ function Navbar() {
           }`}
         onClick={() => setActiveTab(null)}
       ></div>
+
+
     </>
   );
 }
