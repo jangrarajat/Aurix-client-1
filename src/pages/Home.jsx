@@ -66,7 +66,7 @@ function Home() {
       </section>
 
       {/* --- 3. SERVICES HIGHLIGHT (Responsive) --- */}
-      <section className="relative z-10  py-16 sm:py-20 lg:py-24 border-t border-gray-900 h-fit w-full duration-500 bg-white dark:bg-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:90px_90px]">
+      <section className="relative z-10  py-16 sm:py-20 lg:py-24 border-t border-gray-900 h-fit w-full duration-500  bg-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:90px_90px]">
         <div className="container mx-auto px-5 sm:px-8 lg:px-10" >
 
 
@@ -125,7 +125,7 @@ function Home() {
       </section >
 
       {/* --- 4. INTERNSHIP PROGRAM SECTION --- */}
-      <section className="relative z-10 py-16 sm:py-20 lg:py-24  bg-white dark:bg-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:90px_90px]">
+      <section className="relative z-10 py-16 sm:py-20 lg:py-24  bg-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:90px_90px]">
         <div className="container mx-auto px-5 sm:px-8 lg:px-10">
 
           {/* Section Header */}
