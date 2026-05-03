@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from '../components/Navbar';
 import { servicesData } from '../data/servicesData';
+import { Link } from 'react-router-dom';
 
 function Home() {
   const [serviceLenth, setServiceLenth] = useState(8)
@@ -100,10 +101,12 @@ function Home() {
 
                   {/* Action Button: Product-like CTA */}
                   <div className="mt-auto">
-                    <button className="w-full py-3 bg-white text-black font-bold rounded-xl hover:bg-blue-500 hover:text-white transition-all duration-300 transform active:scale-95 flex items-center justify-center gap-2">
-                      View Details
-                      <span className="group-hover:translate-x-1 transition-transform">→</span>
-                    </button>
+                    <Link to={`/services/${servicesData[key].slug}`}>
+                      <button className="w-full py-3 bg-white text-black font-bold rounded-xl hover:bg-blue-500 hover:text-white transition-all duration-300 transform active:scale-95 flex items-center justify-center gap-2">
+                        View Details
+                        <span className="group-hover:translate-x-1 transition-transform">→</span>
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -113,13 +116,105 @@ function Home() {
           <div className='w-full h-10 my-10  flex items-center justify-center'>
             <button onClick={() => serviceLenth === 8 ? setServiceLenth(servicesData.lenth) : setServiceLenth(8)}>
 
-              {serviceLenth === 8 ? (<><div className=' flex items-center gap-3'>View more <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></div></>) :
-               (<><div className=' flex items-center gap-3'>View less <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-up-icon lucide-chevron-up"><path d="m18 15-6-6-6 6"/></svg></div></>)}
+              {serviceLenth === 8 ? (<><div className=' flex items-center gap-3'>View more <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6" /></svg></div></>) :
+                (<><div className=' flex items-center gap-3'>View less <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-up-icon lucide-chevron-up"><path d="m18 15-6-6-6 6" /></svg></div></>)}
             </button>
           </div>
 
         </div>
       </section >
+
+      {/* --- 4. INTERNSHIP PROGRAM SECTION --- */}
+      <section className="relative z-10 py-16 sm:py-20 lg:py-24  bg-white dark:bg-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:90px_90px]">
+        <div className="container mx-auto px-5 sm:px-8 lg:px-10">
+
+          {/* Section Header */}
+          <div className="mb-12 text-center">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Build Your Career with <span className="text-blue-500">Aurix AI Software</span></h2>
+            <p className="text-gray-400 max-w-2xl mx-auto">Get hands-on experience with real-world projects. We provide professional internship letters and job recommendations to help you grow.</p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+
+            {/* Internship Cards Data (Aap ise map bhi kar sakte hain) */}
+            {[
+              {
+                title: "Web Development Internship",
+                desc: "Master MERN stack by working on live agency projects. Includes frontend and backend training.",
+                image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop"
+              },
+              {
+                title: "App Development Internship",
+                desc: "Build cross-platform mobile applications using React Native or Flutter for global clients.",
+                image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=2070&auto=format&fit=crop"
+              },
+              {
+                title: "Software Development Internship",
+                desc: "Learn system architecture, database management, and scalable software solutions.",
+                image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop"
+              }
+            ].map((intern, index) => (
+              <div key={index} className="group bg-[#0f0f0f] border border-gray-800 rounded-2xl overflow-hidden transition-all duration-500 hover:shadow-[0_20px_50px_rgba(59,130,246,0.2)] hover:-translate-y-3 flex flex-col h-full">
+
+                {/* Internship Letter / Image Preview */}
+                <div className="relative h-60 overflow-hidden">
+                  {/* Temporary Internship Letter Image Overlay */}
+                  <div className="absolute inset-0 z-10 bg-black/40 group-hover:bg-black/20 transition-colors" />
+                  <img
+                    src={intern.image}
+                    alt={intern.title}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+
+                  {/* Offer Letter Badge */}
+                  <div className="absolute top-4 right-4 z-20">
+                    <div className="bg-green-500 text-white text-[10px] font-bold px-3 py-1 rounded-lg flex items-center gap-1 shadow-lg">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M20 6 9 17l-5-5" /></svg>
+                      OFFER LETTER PROVIDED
+                    </div>
+                  </div>
+
+                  {/* Recommendation Badge */}
+                  <div className="absolute bottom-4 left-4 z-20">
+                    <span className="bg-white/10 backdrop-blur-md text-white text-[10px] uppercase tracking-wider px-3 py-1 rounded-full border border-white/20">
+                      Job Recommendation
+                    </span>
+                  </div>
+                </div>
+
+                {/* Content */}
+                <div className="p-6 flex flex-col flex-grow">
+                  <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
+                    {intern.title}
+                  </h3>
+                  <p className="text-gray-400 text-sm leading-relaxed mb-6">
+                    {intern.desc}
+                  </p>
+
+                  {/* Perks List */}
+                  <div className="space-y-2 mb-8">
+                    <div className="flex items-center gap-2 text-xs text-gray-500">
+                      <div className="w-1.5 h-1.5 rounded-full bg-blue-500"></div>
+                      Project Certificate Included
+                    </div>
+                    <div className="flex items-center gap-2 text-xs text-gray-500">
+                      <div className="w-1.5 h-1.5 rounded-full bg-blue-500"></div>
+                      Direct Mentorship from Developers
+                    </div>
+                  </div>
+
+                  <div className="mt-auto">
+                    <button className="w-full py-3 bg-blue-600 text-white font-bold rounded-xl hover:bg-blue-500 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-blue-900/20">
+                      Apply for Internship
+                      <span className="group-hover:translate-x-1 transition-transform">→</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* --- 4. CALL TO ACTION (Responsive) --- */}
       < section className="relative z-10 bg-blue-600 py-16 sm:py-20 text-center px-4" >
