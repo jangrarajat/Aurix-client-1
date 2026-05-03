@@ -22,8 +22,8 @@ const servicesData = [
 
 function ServicesMegaMenu() {
   return (
-    <div className="container mx-auto py-8 sm:py-10 lg:py-12 px-4 sm:px-6 md:px-8 lg:px-10 animate-fadeInSlow">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 lg:gap-x-8 gap-y-4 sm:gap-y-6">
+    <div className="container mx-auto py-8 sm:py-10 lg:py-12 px-4 sm:px-6 md:px-8 lg:px-10 animate-fadeInSlow  ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 lg:gap-x-8 gap-y-4 sm:gap-y-6 overflow-auto">
         {servicesData.map((service, index) => (
           <Link 
             key={index} 
