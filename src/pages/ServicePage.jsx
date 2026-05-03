@@ -13,7 +13,7 @@ function ServicePage() {
       <Navbar />
 
       {/* Hero Section */}
-      <div className="sticky top-0 h-[60vh] sm:h-[70vh] lg:h-[80vh] w-full z-0">
+      <div className="sticky top-0 h-[60vh] sm:h-[70vh] lg:h-[80vh] w-full z-0 ">
         <img
           src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop"
           alt={service.title}
@@ -33,7 +33,7 @@ function ServicePage() {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 bg-[#0a0a0a] min-h-screen border-t border-gray-900 shadow-[0_-50px_100px_rgba(0,0,0,0.8)]">
+      <div className="relative z-10 bg-[#0a0a0a] min-h-screen border-t border-gray-900 shadow-[0_-50px_100px_rgba(0,0,0,0.8)]  bg-black bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:90px_90px]">
 
         {/* ── Section 1: Description + Key Offerings ── */}
         <div className="p-6 sm:p-10 md:p-16 lg:p-24 xl:p-32">
