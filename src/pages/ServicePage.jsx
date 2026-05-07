@@ -13,7 +13,7 @@ function ServicePage() {
       <Navbar />
 
       {/* Hero Section */}
-      <div className="sticky top-0 h-[60vh] sm:h-[70vh] lg:h-[80vh] w-full z-0 ">
+      <div className="sticky top-0 h-[60vh] mt-10 sm:h-[70vh] lg:h-[80vh] w-full z-0 ">
         <img
           src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop"
           alt={service.title}
@@ -22,7 +22,7 @@ function ServicePage() {
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/50"></div>
         <div className="absolute inset-0 flex flex-col justify-end p-6 sm:p-10 md:p-16 lg:p-20 pb-20 sm:pb-24 lg:pb-32">
           <div className="max-w-4xl space-y-2 sm:space-y-3 lg:space-y-4">
-            <h4 className="text-blue-500 font-bold tracking-[0.2em] lg:tracking-[0.3em] uppercase text-xs sm:text-sm">
+            <h4 className="text-blue-500  font-bold tracking-[0.2em] lg:tracking-[0.3em] uppercase text-xs sm:text-sm">
               Services / {service.title}
             </h4>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl font-light leading-tight animate-fadeInSlow">
