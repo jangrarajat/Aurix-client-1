@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import { servicesData } from '../data/servicesData';
 
@@ -210,12 +210,33 @@ function ServicePage() {
             Join the league of industry leaders who have scaled their businesses with our bespoke digital solutions.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6">
-            <button className="border border-white px-6 sm:px-8 lg:px-10 py-3 sm:py-4 rounded-full text-base sm:text-lg hover:bg-white hover:text-black transition-all">
-              Contact Us
-            </button>
-            <button className="bg-blue-600 px-6 sm:px-8 lg:px-10 py-3 sm:py-4 rounded-full text-base sm:text-lg hover:bg-blue-700 transition-all">
+            <Link to='/requestService'>
+              <button className="border border-white px-6 sm:px-8 lg:px-10 py-3 sm:py-4 rounded-full text-base sm:text-lg hover:bg-white hover:text-black transition-all">
+                Contact Us
+              </button>
+            </Link>
+            <a
+              href="https://wa.me/917023009861"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-600 px-6 sm:px-8 lg:px-10 py-3 sm:py-4 rounded-full text-base sm:text-lg hover:bg-blue-700 transition-all inline-flex items-center gap-2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-message-circle"
+              >
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+              </svg>
               Free Consultation
-            </button>
+            </a>
           </div>
         </div>
 

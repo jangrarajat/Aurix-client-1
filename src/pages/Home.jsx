@@ -276,7 +276,7 @@ function Home() {
             <div className="flex gap-4 sm:gap-6 lg:gap-8 flex-wrap justify-center">
               <span className="hover:text-white cursor-pointer transition-colors">Privacy Policy</span>
               <span className="hover:text-white cursor-pointer transition-colors">Terms of Service</span>
-              <span className="hover:text-white cursor-pointer transition-colors">Cookie Policy</span>
+            
             </div>
           </div>
         </div>

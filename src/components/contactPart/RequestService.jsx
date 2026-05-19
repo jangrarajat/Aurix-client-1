@@ -8,6 +8,7 @@ function RequestService() {
     firstName: '',
     lastName: '',
     email: '',
+    phone: '',              // 🔥 NEW FIELD
     organization: '',
     region: '',
     industry: '',
@@ -27,7 +28,7 @@ function RequestService() {
   };
 
   const validateForm = () => {
-    const required = ['firstName', 'lastName', 'email', 'organization', 'region', 'industry', 'message'];
+    const required = ['firstName', 'lastName', 'email', 'phone', 'organization', 'region', 'industry', 'message'];
     for (let field of required) {
       if (!formData[field] || formData[field].trim() === '') {
         setSubmitStatus({ type: 'error', message: `Please fill in ${field} (required).` });
@@ -40,6 +41,11 @@ function RequestService() {
     }
     if (!formData.email.includes('@')) {
       setSubmitStatus({ type: 'error', message: 'Please enter a valid email address.' });
+      return false;
+    }
+    // Simple phone validation (min 10 digits)
+    if (!/^\d{10,}$/.test(formData.phone.replace(/\D/g, ''))) {
+      setSubmitStatus({ type: 'error', message: 'Please enter a valid phone number (at least 10 digits).' });
       return false;
     }
     return true;
@@ -56,6 +62,7 @@ function RequestService() {
       first_name: formData.firstName,
       last_name: formData.lastName,
       email: formData.email,
+      phone: formData.phone,                // 🔥 SEND PHONE
       organization: formData.organization,
       region: formData.region,
       industry: formData.industry,
@@ -65,7 +72,6 @@ function RequestService() {
     };
 
     try {
-      // TERE DI HUYE VALUES - YAHAN LAGAI HAIN
       const serviceId = 'service_f2n83he';
       const templateId = 'template_7iold2b';
       const publicKey = 'xFQ6wv-e43cIUKd_D';
@@ -73,11 +79,11 @@ function RequestService() {
       const response = await emailjs.send(serviceId, templateId, templateParams, publicKey);
       console.log('Email sent:', response);
       setSubmitStatus({ type: 'success', message: 'Your request has been sent successfully! We will contact you soon.' });
-      // Reset form
       setFormData({
         firstName: '',
         lastName: '',
         email: '',
+        phone: '',
         organization: '',
         region: '',
         industry: '',
@@ -132,6 +138,10 @@ function RequestService() {
             </div>
             <div className="border-b border-gray-700 py-2">
               <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Email*" className="bg-transparent w-full outline-none text-base sm:text-lg placeholder:text-gray-500" disabled={isSubmitting} />
+            </div>
+            {/* 🔥 NEW PHONE FIELD */}
+            <div className="border-b border-gray-700 py-2">
+              <input type="tel" name="phone" value={formData.phone} onChange={handleChange} placeholder="Phone Number*" className="bg-transparent w-full outline-none text-base sm:text-lg placeholder:text-gray-500" disabled={isSubmitting} />
             </div>
             <div className="border-b border-gray-700 py-2">
               <input type="text" name="organization" value={formData.organization} onChange={handleChange} placeholder="Organization*" className="bg-transparent w-full outline-none text-base sm:text-lg placeholder:text-gray-500" disabled={isSubmitting} />
