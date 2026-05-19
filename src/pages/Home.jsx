@@ -44,7 +44,7 @@ function Home() {
               We help you turn complexity into <span className="font-bold">opportunity.</span>
             </h2>
             <p className="text-base sm:text-lg lg:text-xl text-gray-600 leading-relaxed">
-              At Webraahi, we don't just build software; we build the future of your enterprise.
+              At AURIX AI SOFTWARE, we don't just build software; we build the future of your enterprise.
               Our holistic approach combines industry expertise with cutting-edge technology
               to create meaningful change for your customers.
             </p>
@@ -239,7 +239,7 @@ function Home() {
               <img src="https://res.cloudinary.com/djtvxmttf/image/upload/v1777626035/lojj_rz6wgh.png" className="h-12 sm:h-14 lg:h-16" alt="Logo" />
               <p className="text-gray-500 text-sm sm:text-base leading-relaxed">
                 Empowering the digital landscape through innovation and precision.
-                Webraahi is your partner in future-ready IT.
+                AURIX AI SOFTWARE is your partner in future-ready IT.
               </p>
             </div>
 
