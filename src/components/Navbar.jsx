@@ -68,7 +68,7 @@ function Navbar() {
         </button>
 
         {/* Desktop Contact Button - Hide on mobile */}
-        <Link to='/contact' onClick={closeMenu} className="hidden md:block">
+        <Link to='/requestService' onClick={closeMenu} className="hidden md:block">
           <div className='cursor-pointer font-medium text-xl lg:text-3xl hover:underline hover:text-white transition-colors'>
             Contact US
           </div>
@@ -91,7 +91,7 @@ function Navbar() {
                 {link.name}
               </button>
             ))}
-            <Link to='/contact' onClick={closeMenu} className="py-3 text-lg text-blue-400 font-medium">
+            <Link to='/requestService' onClick={closeMenu} className="py-3 text-lg text-blue-400 font-medium">
               Contact US
             </Link>
           </div>

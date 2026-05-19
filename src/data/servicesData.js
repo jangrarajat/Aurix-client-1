@@ -39,7 +39,46 @@ export const servicesData = {
       result: "Load time reduced to 1.2 seconds. Mobile conversions increased by 240%. Organic traffic grew 3x in 6 months."
     }
   },
-
+  "ecommerce-development": {
+    title: "E-commerce Development",
+    slug: 'ecommerce-development',
+    heroText: "Transforming Your Store into a Global Marketplace.",
+    description: "We build scalable, high-conversion online stores that provide seamless shopping experiences. Whether it's a multi-vendor marketplace or a niche boutique, we combine high-speed performance with secure payment integrations to drive your sales.",
+    details: ["Custom B2B & B2C Stores", "Multi-vendor Marketplaces", "Headless Commerce Solutions", "Payment & Logistics Integration"],
+    icon: 'https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80',
+    stats: [
+      { value: "50+", label: "E-stores Launched" },
+      { value: "40%", label: "Avg. Conversion Boost" },
+      { value: "Secure", label: "PCI-DSS Compliant" },
+      { value: "24/7", label: "Inventory Syncing" },
+    ],
+    process: [
+      { step: "01", title: "Market Research", desc: "We study your products, competitors, and target demographics to define the best e-commerce strategy and user journey." },
+      { step: "02", title: "Conversion-Centric Design", desc: "Our UX experts focus on product discoverability, intuitive navigation, and a frictionless 'Add to Cart' flow." },
+      { step: "03", title: "Core Engineering", desc: "Building the engine using robust frameworks, focusing on secure checkouts, dynamic filtering, and real-time inventory management." },
+      { step: "04", title: "Integration & Security", desc: "Integrating payment gateways (Razorpay/Stripe), shipping APIs, and CRM tools while ensuring end-to-end encryption." },
+      { step: "05", title: "Go-Live & Scaling", desc: "Final stress testing for high-traffic scenarios followed by launch and ongoing sales-focused optimization." },
+    ],
+    technologies: ["React.js", "Next.js", "Node.js", "Redux", "Stripe/Razorpay", "Redis", "Elasticsearch", "Firebase", "Sanity CMS", "Shopify API"],
+    whyUs: [
+      { title: "Mobile Shopping Focus", desc: "Over 70% of shoppers use phones. We build PWA-ready stores that feel like native apps on mobile devices." },
+      { title: "High Speed, Low Churn", desc: "Every millisecond counts in e-commerce. We optimize product images and data fetching to prevent cart abandonment." },
+      { title: "Advanced Analytics", desc: "We integrate deep tracking to monitor user behavior, abandoned carts, and sales funnels from day one." },
+      { title: "Scale with Ease", desc: "Our architectures are built to handle 100 or 100,000+ products without compromising on performance." },
+    ],
+    faqs: [
+      { q: "Which platform is best for my business?", a: "It depends on your scale. We specialize in custom MERN builds for total control, or headless Shopify/Next.js setups for fast scaling." },
+      { q: "Can you integrate local payment gateways?", a: "Yes, we have extensive experience integrating Razorpay, Paytm, Stripe, and PayPal with automated tax and invoice generation." },
+      { q: "Is the admin panel easy to use?", a: "Absolutely. We provide a custom, user-friendly dashboard where you can manage products, orders, and customers without any technical knowledge." },
+      { q: "How do you handle site security?", a: "We implement SSL, data encryption, secure session management, and regular vulnerability scans to keep customer data safe." },
+    ],
+    caseStudy: {
+      client: "TrendVibe Fashion",
+      challenge: "A lifestyle brand struggling with slow checkout and poor inventory syncing across multiple channels.",
+      solution: "Developed a custom Next.js storefront with a centralized Node.js backend for real-time inventory and one-tap checkout.",
+      result: "Checkout completion rate increased by 45%. Monthly revenue grew by 2x within the first quarter of launch."
+    }
+  },
   "mobile-app-development": {
     title: "Mobile App Development",
     slug: 'mobile-app-development',
@@ -80,7 +119,46 @@ export const servicesData = {
       result: "App launched with 50,000 downloads in Month 1. Peak order capacity handled flawlessly. Rated 4.9★ on both stores."
     }
   },
-
+  "shopify-development": {
+    title: "Shopify Store Development",
+    slug: 'shopify-development',
+    heroText: "Launch Your Premium Brand with Shopify Experts.",
+    description: "Hum banate hain aisi Shopify stores jo sirf dikhne mein sundar nahi, balki sales generate karne mein bhi expert hain. Theme customization se lekar custom Liquid coding tak, hum har cheez ko brand-centric banate hain.",
+    details: ["Custom Shopify Theme Dev", "Shopify App Integration", "Store Migration", "Headless Shopify (Hydrogen)"],
+    icon: 'https://cdn.shopify.com/app-store/listing_images/635d8e7c2e0b5d9a9f9b5c2a1e0b5d9a/icon/COfR-v_0v-8CEAE=.png',
+    stats: [
+      { value: "100+", label: "Stores Optimized" },
+      { value: "0.5s", label: "Instant Page Load" },
+      { value: "95+", label: "Google Desktop Score" },
+      { value: "Global", label: "Multi-Currency Ready" },
+    ],
+    process: [
+      { step: "01", title: "Store Strategy", desc: "Aapke products aur target audience ke hisaab se hum best Shopify plan aur architecture suggest karte hain." },
+      { step: "02", title: "Design & Branding", desc: "Hum custom UI create karte hain jo Shopify ke Liquid engine ke saath perfectly sync hota hai aur brand identity ko match karta hai." },
+      { step: "03", title: "Development & Coding", desc: "Clean Liquid code ka use karke fast-loading sections aur custom features develop kiye jaate hain." },
+      { step: "04", title: "App & Payment Setup", desc: "Zaroori apps (Marketing, SEO, Reviews) aur domestic/international payment gateways ka seamless integration." },
+      { step: "05", title: "Launch & Training", desc: "Store live karne ke baad hum aapko admin panel ki training dete hain takki aap orders easily manage kar saken." },
+    ],
+    technologies: ["Shopify Liquid", "Hydrogen", "Oxygen", "GraphQL", "Tailwind CSS", "JavaScript", "React", "Node.js"],
+    whyUs: [
+      { title: "No Bloated Apps", desc: "Hum third-party apps par kam rely karte hain aur zyada features custom code se banate hain takki speed slow na ho." },
+      { title: "SEO Optimized", desc: "Product schema, meta data aur image alt-tags hum development ke waqt hi fix kar dete hain." },
+      { title: "Conversion Focused", desc: "Upsell, cross-sell aur intuitive checkout process hamari priority hoti hai." },
+      { title: "Lifetime Support", desc: "Store launch hone ke baad bhi hum bug fixes aur updates ke liye hamesha available rehte hain." },
+    ],
+    faqs: [
+      { q: "Kya aap meri purani website ko Shopify par move kar sakte hain?", a: "Haan, hum WordPress, Wix ya custom site se saara data (Products, Customers, Orders) Shopify par migrate kar sakte hain bina SEO loss ke." },
+      { q: "Kya mujhe Shopify ke liye coding seekhni padegi?", a: "Bilkul nahi. Hum store ko aise setup karte hain ki aap bina kisi coding knowledge ke products aur banners change kar saken." },
+      { q: "Shopify store setup mein kitna kharcha aata hai?", a: "Ye aapki requirements par depend karta hai. Basic setup 1-2 weeks mein ho jata hai, jabki custom premium stores mein thoda zyada waqt lagta hai." },
+      { q: "Kya aap custom Shopify Apps bhi banate hain?", a: "Haan, agar koi specific feature kisi app mein nahi mil raha, toh hum aapke liye custom private app bhi develop kar sakte hain." },
+    ],
+    caseStudy: {
+      client: "UrbanDecor India",
+      challenge: "Ek bloated theme ki wajah se store loading time 10 second tha, jisse conversion rate bahut gir gaya tha.",
+      solution: "Humne theme ko optimize kiya aur unnecessary apps ko custom code se replace kiya.",
+      result: "Page speed 80% fast hui aur sales mein pehle mahine hi 35% ka jump dekha gaya."
+    }
+  },
   "software-development": {
     title: "Software Development",
     slug: 'software-development',
@@ -121,6 +199,7 @@ export const servicesData = {
       result: "Operations cost reduced by 40%. System downtime eliminated. 300+ fleet managers onboarded in first quarter."
     }
   },
+  
 
   "whatsapp-business-api": {
     title: "WhatsApp Business API",

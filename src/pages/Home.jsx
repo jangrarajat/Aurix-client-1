@@ -224,9 +224,11 @@ function Home() {
         <p className="text-base sm:text-lg md:text-xl text-blue-100 mb-8 sm:mb-10 max-w-2xl mx-auto px-4">
           Let's discuss how our AI and Full-Stack solutions can take your business to the next level.
         </p>
-        <button className="bg-white text-blue-600 px-8 sm:px-10 lg:px-12 py-3 sm:py-4 rounded-full font-bold text-lg sm:text-xl hover:shadow-2xl transition-all">
-          Contact Us Now
-        </button>
+        <Link to='/requestService'>
+          <button className="bg-white text-blue-600 px-8 sm:px-10 lg:px-12 py-3 sm:py-4 rounded-full font-bold text-lg sm:text-xl hover:shadow-2xl transition-all">
+            Contact Us Now
+          </button>
+        </Link>
       </section >
 
       {/* --- 5. PREMIUM FOOTER (Responsive) --- */}

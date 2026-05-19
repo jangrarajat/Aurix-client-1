@@ -1,14 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
+   
+
+
 const servicesData = [
   { name: 'Web Development', slug: 'web-development' },
+  {name:"Ecommerce Development" , slug:"ecommerce-development"},
+  {name:'Shopify Store',slug:'shopify-store'},
   { name: 'Mobile App Development', slug: 'mobile-app-development' },
   { name: 'Software Development', slug: 'software-development' },
   { name: 'WhatsApp Business API', slug: 'whatsapp-business-api' },
   { name: 'Graphic Design', slug: 'graphic-design' },
   { name: 'Video Editing', slug: 'video-editing' },
   { name: 'Salesforce Solutions', slug: 'salesforce-solutions' },
+  { name: 'CRM Solution', slug: 'crm-solution' },
+  {name:"Zoho Solution" , slug:'zoho-solution' },
   { name: 'AI Automation', slug: 'ai-automation' },
   { name: 'AI Agents', slug: 'ai-agents' },
   { name: 'AI Tools', slug: 'ai-tools' },
@@ -18,6 +26,7 @@ const servicesData = [
   { name: 'WordPress Development', slug: 'wordpress-development' },
   { name: 'Digital Marketing', slug: 'digital-marketing' },
   { name: 'SEO Services', slug: 'seo-services' },
+  
 ];
 
 function ServicesMegaMenu() {
